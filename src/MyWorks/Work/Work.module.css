@@ -1,0 +1,17 @@
+.WorkBlock {
+    padding: 10px;
+    background-color: #85ec81;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.workImg{
+    flex-direction: column;
+    justify-content: end;
+    display: flex;
+    background-color: #14b4dc;
+    height: 100px;
+    width: 100px;
+}

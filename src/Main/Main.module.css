@@ -2,15 +2,7 @@
     height: 100vh;
     background-color: darkkhaki;
 }
-.container{
-    border: 1px solid;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .text{
     width: 300px;

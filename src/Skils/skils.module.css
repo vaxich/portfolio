@@ -1,0 +1,19 @@
+.skilsBlock{
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+.skilsContainer{
+    justify-content: center;
+    flex-direction: column;
+
+}
+.title{
+    background-color: #14b4dc;
+}
+.skils{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

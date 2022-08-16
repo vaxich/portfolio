@@ -1,0 +1,26 @@
+.contactBlock {
+    height: 50vh;
+    background-color: #c23a85;
+
+}
+.contactForm{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.contactInput {
+    margin-top: 30px;
+    min-width: 50%;
+    height: 3vh;
+}
+.contactTextarea {
+    margin-top: 30px;
+    min-width: 50%;
+    height: 15vh;
+}
+.contactBotton {
+    margin-top: 30px;
+    min-width: 50%;
+    height: 5vh;
+}
