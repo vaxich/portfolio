@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    border: 1px solid red;
+    width: 300px;
+    justify-content: space-between;
+}
+.textStyle{
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+    transition: all .3s ease;
+}
