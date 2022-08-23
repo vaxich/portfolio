@@ -1,6 +1,15 @@
 .nav {
+
     display: flex;
     border: 1px solid red;
-    width: 300px;
+    width: 350px;
     justify-content: space-between;
+}
+.textStyle{
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+    transition: all .3s ease;
 }

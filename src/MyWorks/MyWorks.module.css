@@ -1,11 +1,17 @@
 .myWorksBlock {
     min-height: 100vh;
-    background-color: #6b89bd;
+
 }
 .worksContainer{
-    justify-content: flex-start;
-    flex-direction: column;
+    /*justify-content: flex-start;*/
+    /*flex-direction: column;*/
 
+}
+.worksTitle{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
 }
 .works{
     border: 1px solid;

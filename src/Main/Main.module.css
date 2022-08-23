@@ -1,13 +1,47 @@
 .mainBlock {
     height: 100vh;
-    background-color: darkkhaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.text{
-    width: 300px;
-    background-color: aliceblue;
+.mainText{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
+.mainSpanText {
+    color: #4169e1;
+}
+.creativ{
+    font-size: 25px;
+    font-weight: 500;
+    color: #a2a2a2;
+    margin-bottom: 40px;
+}
+.job{
+    color: #fff;
+    font-weight: 600
+}
+.mainButton{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: #4169e1;
+    padding: 10px 40px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: Poppins;
+    transition: all .3s ease;
+}
+.mainButton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 .photo{
     width: 300px;
     height: 400px;

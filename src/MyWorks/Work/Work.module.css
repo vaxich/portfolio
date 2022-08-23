@@ -1,6 +1,8 @@
 .WorkBlock {
+    width: 300px;
+    height: 300px;
     padding: 10px;
-    background-color: #85ec81;
+    background-color: #14b4dc;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -14,4 +16,14 @@
     background-color: #14b4dc;
     height: 100px;
     width: 100px;
+    color: #fff;
+}
+.workText {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500
+}
+.workAbout{
+    color: #a2a2a2;
+    font-size: 20px;
 }
