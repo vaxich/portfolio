@@ -21,10 +21,11 @@ import OneProject from "./MyWorks/OneProject/OneProject";
 // }
 
 
-const myWorksObject = [
+export const myWorksObject = [
     {
         id:"1",
-        title:"Сочиальная сеть",
+        title:"Социальная сеть",
+        slug: 'socialnaya-set',
         percentCompleted: "70%",
         description: "bla-bla-bla",
         linkProgect: "http",
@@ -33,10 +34,11 @@ const myWorksObject = [
     {
         id: "2",
         title:"Счётчик версия № 3",
-        percentCompleted: "10%",
-        description: "bla-bla-bla",
-        linkProgect: "http",
-        lingGitHub:"http bla-bla"
+        slug: 'counter3',
+        percentCompleted: "100%",
+        description: "функционал у счетчика такой-же как и в первой версии, но работает с использованием REDUX",
+        linkProgect: "https://vaxich.github.io/counter-Wednesday/",
+        lingGitHub:"https://github.com/vaxich/counter-Wednesday"
     }
 ]
 
@@ -56,7 +58,7 @@ function App() {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/projects" element={<MyWorks state={myWorksObject}/>}/>
                 <Route path="/contact" element={<Contact/>}/>
-                <Route path="/project" element={<OneProject/>}/>
+                <Route path="/project/:slug" element={<OneProject/>}/>
 
             </Routes>
         {/*<Skils/>*/}

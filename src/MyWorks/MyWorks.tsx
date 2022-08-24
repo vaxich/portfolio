@@ -2,6 +2,7 @@ import React from 'react';
 import style from './MyWorks.module.css'
 import styleContainer from "../common/styles/container.module.css";
 import Work from "./Work/Work";
+import {myWorksObject} from "../App";
 
 type WorkType = {
     id:string
@@ -21,7 +22,7 @@ export const  MyWorks =(props:any) => {
                 <h3 className={style.worksTitle}>My Works</h3>
                 <div className={style.works}>
                     {
-                        props.state.map((work: WorkType) => {
+                        myWorksObject.map((work) => {
 
                             return  (
                                 <Work  //отрисовываем компоненту Work
@@ -32,6 +33,7 @@ export const  MyWorks =(props:any) => {
                                     description={work.description}
                                     linkProgect={work.linkProgect}
                                     lingGitHub={work.lingGitHub}
+                                    slug = {work.slug }
                                 />
                                 )
                         })

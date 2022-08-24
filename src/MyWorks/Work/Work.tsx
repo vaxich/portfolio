@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Work.module.css'
 import {Link} from "react-router-dom";
+import OneProject from "../OneProject/OneProject";
+import {log} from "util";
 
 
 type PropsWorkType = {
@@ -11,6 +13,7 @@ type PropsWorkType = {
     description: string
     linkProgect: string
     lingGitHub: string
+    slug: string
 }
 
 function Work(props: any) {
@@ -18,7 +21,9 @@ function Work(props: any) {
     return (
         <div className={style.WorkBlock}>
             <div className={style.workImg}>
-                <Link className={style.textStyle} to="/project" >
+                <Link className={style.textStyle} to={`/project/${props.slug}`} >
+
+
                     Посмотреть
                 </Link>
 
