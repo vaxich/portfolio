@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 
 import './App.css';
-import './BackGround.css';
+//import './BackGround.css';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skils from "./Skils/Skils";
@@ -12,13 +12,12 @@ import {MyWorks} from "./MyWorks/MyWorks";
 
 import OneProject from "./MyWorks/OneProject/OneProject";
 
-// const obj ={
-//     ['1']: [
-//         { id: '1', title: "HTML&CSS", percentCompleted: '70' },
-//         { id: '2', title: "JS", percentCompleted: '90' },
-//
-//     ]
-// }
+// @ts-ignore (no type declarations for vantajs)
+import NET from 'vanta/dist/vanta.net.min'
+
+import backgroundCounter3 from "./common/photo/counter3.png";
+
+
 
 
 export const myWorksObject = [
@@ -29,7 +28,8 @@ export const myWorksObject = [
         percentCompleted: "70%",
         description: "bla-bla-bla",
         linkProgect: "http",
-        lingGitHub:"http bla-bla"
+        lingGitHub:"http bla-bla",
+        urlImg:""
     },
     {
         id: "2",
@@ -38,20 +38,49 @@ export const myWorksObject = [
         percentCompleted: "100%",
         description: "функционал у счетчика такой-же как и в первой версии, но работает с использованием REDUX",
         linkProgect: "https://vaxich.github.io/counter-Wednesday/",
-        lingGitHub:"https://github.com/vaxich/counter-Wednesday"
+        lingGitHub:"https://github.com/vaxich/counter-Wednesday",
+        urlImg:backgroundCounter3
+
     }
 ]
 
 function App() {
+
+    const [vantaEffect, setVantaEffect] = useState<any>(0)
+    const myRef = useRef(null)
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(
+                NET({
+                    el: myRef.current,
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    color: 0x0028fc,
+                    backgroundColor: 0x0,
+                    maxDistance: 18.00,
+                    spacing: 16.00
+                })
+            )
+        }
+        return () => {
+            if (vantaEffect) vantaEffect.destroy()
+        }
+    }, [vantaEffect])
+
     return (
-        <div className="App">
+        <div ref={myRef} id="intro" className="App">
             <Header/>
 
-            <div id='stars'/>
-            <div id='stars2'/>
-            <div id='stars3'/>
-            <div id='title'>
-            </div>
+            {/*<div id='stars'/>*/}
+            {/*<div id='stars2'/>*/}
+            {/*<div id='stars3'/>*/}
+            {/*<div id='title'>*/}
+            {/*</div>*/}
             <Routes>
                 <Route path="/" element={<Main/>}/>
                 <Route path="/skils" element={<Skils/>}/>

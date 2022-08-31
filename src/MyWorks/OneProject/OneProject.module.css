@@ -9,14 +9,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
 
 }
 .oneProjectImg{
-    width: 300px;
-    height: 300px;
-    background-color: darkkhaki;
+    width: 400px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 .oneProjectMiniBlock{
     padding-left: 10px;

@@ -5,16 +5,18 @@ import {myWorksObject} from "../../App";
 import styleContainer from "../../common/styles/container.module.css";
 
 
+
 function OneProject(props: any) {
     const {slug} = useParams()
 
     const project = myWorksObject.find(projectData => projectData.slug === slug)
+    console.log(project)
     if (project) return (
 
         <div className={styleContainer.container}>
             <div className={style.oneProjectBlock}>
                 <h3 className={style.oneProjectTitle}>{project.title}</h3>
-                <div className={style.oneProjectImg}>
+                <div className={style.oneProjectImg} style={{ backgroundImage: `url(${project.urlImg})` }}>
 
                 </div>
                 <div className={style.oneProjectMiniBlock}>

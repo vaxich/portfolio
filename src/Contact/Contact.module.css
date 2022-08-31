@@ -149,9 +149,13 @@
     display: inline-block;
     background-color: #4169e1;
 }
+.contactBotton:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
 
-
-input, textarea {
+input, textarea, button {
     all: unset;
 }
 

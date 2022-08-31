@@ -34,6 +34,7 @@ export const  MyWorks =(props:any) => {
                                     linkProgect={work.linkProgect}
                                     lingGitHub={work.lingGitHub}
                                     slug = {work.slug }
+                                    urlImg={work.urlImg}
                                 />
                                 )
                         })
