@@ -4,18 +4,18 @@ import styleContainer from "../common/styles/container.module.css";
 import Work from "./Work/Work";
 import {myWorksObject} from "../App";
 
-type WorkType = {
-    id:string
-    title:string
-    percentCompleted: string
-    description: string
-    linkProgect: string
-    lingGitHub:string
+type myWorksObjectType = {
+    id: string,
+    title:string,
+    slug: string,
+    percentCompleted: string,
+    description: string,
+    linkProgect: string,
+    lingGitHub:string,
+    urlImg:string
 }
 
-
-
-export const  MyWorks =(props:any) => {
+export const  MyWorks =(props:any ) => {
     return (
         <div className={style.myWorksBlock}>
             <div className={ ` ${styleContainer.container} ${style.worksContainer}`   }>

@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 
 import './App.css';
-//import './BackGround.css';
+import './BackGround.css';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Skils from "./Skils/Skils";
+import Skils from "./Skils/Skills";
 import About from "./About/About";
 import {Route, Routes} from "react-router-dom";
 import Contact from "./Contact/Contact";
@@ -16,7 +16,12 @@ import OneProject from "./MyWorks/OneProject/OneProject";
 import NET from 'vanta/dist/vanta.net.min'
 
 import backgroundCounter3 from "./common/photo/counter3.png";
+import Smoothie from "./common/photo/Smoothie.png";
 
+import html5 from "./common/icon/html-5.png"
+import css3 from "./common/icon/css.png"
+import js from "./common/icon/js.png"
+import react from "./common/icon/react.png"
 
 
 
@@ -40,6 +45,52 @@ export const myWorksObject = [
         linkProgect: "https://vaxich.github.io/counter-Wednesday/",
         lingGitHub:"https://github.com/vaxich/counter-Wednesday",
         urlImg:backgroundCounter3
+
+    },
+    {
+        id: "",
+        title:"Smoothie",
+        slug: 'smoothie',
+        percentCompleted: "100%",
+        description: "Вёрстка страницы. Сделана на GULP и SCSS",
+        linkProgect: "https://vaxich.github.io/Smoothie/dist/",
+        lingGitHub:"https://github.com/vaxich/Smoothie",
+        urlImg:Smoothie
+
+    }
+]
+
+export const mySkills = [
+    {
+        id:"1",
+        title:"HTML",
+        percentCompleted: "70%",
+        description: "bla-bla-bla",
+        skillAvatar:html5
+
+    },
+    {
+        id:"2",
+        title:"CSS",
+        percentCompleted: "70%",
+        description: "bla-bla-bla",
+        skillAvatar:css3
+
+    },
+    {
+        id:"3",
+        title:"JS",
+        percentCompleted: "70%",
+        description: "bla-bla-bla",
+        skillAvatar:js
+
+    },
+    {
+        id:"4",
+        title:"REACT",
+        percentCompleted: "70%",
+        description: "bla-bla-bla",
+        skillAvatar:react
 
     }
 ]
@@ -76,14 +127,14 @@ function App() {
         <div ref={myRef} id="intro" className="App">
             <Header/>
 
-            {/*<div id='stars'/>*/}
-            {/*<div id='stars2'/>*/}
-            {/*<div id='stars3'/>*/}
-            {/*<div id='title'>*/}
-            {/*</div>*/}
+            <div id='stars'/>
+            <div id='stars2'/>
+            <div id='stars3'/>
+            <div id='title'>
+            </div>
             <Routes>
                 <Route path="/" element={<Main/>}/>
-                <Route path="/skils" element={<Skils/>}/>
+                <Route path="/skils" element={<Skils stateSkills={mySkills}/>}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/projects" element={<MyWorks state={myWorksObject}/>}/>
                 <Route path="/contact" element={<Contact/>}/>

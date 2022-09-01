@@ -6,9 +6,6 @@ import background from "../../common/photo/counter3.png";
 
 function Work(props: any) {
 
-    console.log(props.urlImg)
-
-
      return (
         <div className={style.WorkBlock} style={{ backgroundImage: `url(${props.urlImg})` }}>
 
