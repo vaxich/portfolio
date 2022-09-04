@@ -8,10 +8,11 @@ function Main() {
         <div className={styleContainer.container}>
             <div className={style.mainBlock}>
                 <div >
-                    <h3 className={style.mainText}>PAVEL <span className={style.mainSpanText}>DEDELYUK</span></h3>
-                    <h3> <span className={style.creativ}>Creative </span> <span className={style.job}>Developer</span> </h3>
+                    <p className={style.mainText}>Hello , </p>
+                    <h3 className={style.mainText}>I`m  <span className={style.mainSpanText}>PAVEL DEDELYUK</span></h3>
+                    <h3> <span className={style.creativ}>novice  </span> <span className={style.job}>Developer</span> </h3>
                     <Link className={style.textStyle} to="/contact">
-                        <a className={style.mainButton} href="">Get in Touch</a>
+                        <a className={style.mainButton} href="">Download CV</a>
                     </Link>
 
 

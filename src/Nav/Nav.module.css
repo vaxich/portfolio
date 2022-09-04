@@ -2,14 +2,35 @@
 
     display: flex;
     border: 1px solid red;
-    width: 350px;
+    /*width: 470px;*/
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .textStyle{
-    font-size: 17px;
+    padding: 10px;
+    font-size: 35px;
     text-decoration: none;
     color: #fff;
-    font-family: Poppins;
+
     font-weight: 500;
-    transition: all .3s ease;
+
+}
+@media  (max-width: 460px) {
+
+    .textStyle{
+        font-size: 20px;
+    }
+}
+@media  (max-width: 600px) {
+    .nav {
+        width: 70vw;
+    }
+
+}
+
+@media  (max-width: 930px) {
+
+    .textStyle{
+        font-size: 15px;
+    }
 }

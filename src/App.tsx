@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 
 import './App.css';
-import './BackGround.css';
+//import './BackGround.css';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skils from "./Skils/Skills";
@@ -48,7 +48,7 @@ export const myWorksObject = [
 
     },
     {
-        id: "",
+        id: "3",
         title:"Smoothie",
         slug: 'smoothie',
         percentCompleted: "100%",
@@ -127,11 +127,11 @@ function App() {
         <div ref={myRef} id="intro" className="App">
             <Header/>
 
-            <div id='stars'/>
-            <div id='stars2'/>
-            <div id='stars3'/>
-            <div id='title'>
-            </div>
+            {/*<div id='stars'/>*/}
+            {/*<div id='stars2'/>*/}
+            {/*<div id='stars3'/>*/}
+            {/*<div id='title'>*/}
+            {/*</div>*/}
             <Routes>
                 <Route path="/" element={<Main/>}/>
                 <Route path="/skils" element={<Skils stateSkills={mySkills}/>}/>

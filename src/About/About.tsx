@@ -13,8 +13,9 @@ function About() {
                     </div>
                     <div className={style.AboutRight}>
                         <h3 className={style.aboutText}>PAVEL <span className={style.aboutSpanText}>DEDELYUK</span></h3>
-                        <h3> <span className={style.creativ}>Creative </span> <span className={style.job}>Developer</span> </h3>
-                        <p className={style.text}>My name is David Parker. I am a graphic designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge.</p>
+                        <h3> <span className={style.creativ}>novice </span> <span className={style.job}>Developer</span> </h3>
+                        <p className={style.text}>
+                            My name is Pavel Dedelyuk. I am a novice developer. I am passionate about JavaScript and React development. I acquired skills and knowledge in IT-INCUBATOR. I am currently studying here. Here you can see my projects. they will be constantly updated.</p>
                         <div>
                             <a className={style.aboutButton} href="">Learn More</a>
                         </div>

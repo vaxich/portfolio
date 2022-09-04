@@ -1,7 +1,7 @@
 .container{
     border: 1px solid red;
     height: 100%;
-    width: 900px;
+    width: 80%;
     margin: 0 auto;
     z-index: 100;
     position: relative;
