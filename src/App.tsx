@@ -16,12 +16,15 @@ import OneProject from "./MyWorks/OneProject/OneProject";
 import NET from 'vanta/dist/vanta.net.min'
 
 import backgroundCounter3 from "./common/photo/counter3.png";
-import Smoothie from "./common/photo/Smoothie.png";
+import backgroundSmoothie from "./common/photo/Smoothie.png";
 
 import html5 from "./common/icon/html-5.png"
 import css3 from "./common/icon/css.png"
 import js from "./common/icon/js.png"
+import typeScript from "./common/icon/typescript.png"
 import react from "./common/icon/react.png"
+import redux from "./common/icon/redux.png"
+import git from "./common/icon/git.png"
 
 
 
@@ -55,7 +58,7 @@ export const myWorksObject = [
         description: "Вёрстка страницы. Сделана на GULP и SCSS",
         linkProgect: "https://vaxich.github.io/Smoothie/dist/",
         lingGitHub:"https://github.com/vaxich/Smoothie",
-        urlImg:Smoothie
+        urlImg:backgroundSmoothie
 
     }
 ]
@@ -65,7 +68,6 @@ export const mySkills = [
         id:"1",
         title:"HTML",
         percentCompleted: "70%",
-        description: "bla-bla-bla",
         skillAvatar:html5
 
     },
@@ -73,15 +75,13 @@ export const mySkills = [
         id:"2",
         title:"CSS",
         percentCompleted: "70%",
-        description: "bla-bla-bla",
         skillAvatar:css3
 
     },
     {
         id:"3",
-        title:"JS",
+        title:"JavaScript",
         percentCompleted: "70%",
-        description: "bla-bla-bla",
         skillAvatar:js
 
     },
@@ -89,8 +89,28 @@ export const mySkills = [
         id:"4",
         title:"REACT",
         percentCompleted: "70%",
-        description: "bla-bla-bla",
         skillAvatar:react
+
+    },
+    {
+        id:"5",
+        title:"TypeScript",
+        percentCompleted: "70%",
+        skillAvatar:typeScript
+
+    },
+    {
+        id:"6",
+        title:"Redux",
+        percentCompleted: "70%",
+        skillAvatar:redux
+
+    },
+    {
+        id:"7",
+        title:"Git",
+        percentCompleted: "70%",
+        skillAvatar:git
 
     }
 ]

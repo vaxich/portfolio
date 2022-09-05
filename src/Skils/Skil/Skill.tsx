@@ -5,7 +5,6 @@ type PropsSkillType = {
     id: string,
     title:string,
     percentCompleted: string,
-    description: string,
     skillAvatar:string
 }
 
@@ -16,7 +15,7 @@ function Skill(props: PropsSkillType) {
 
             </div>
             <h3>{props.title}</h3>
-            <span className={style.description}>{props.description} </span>
+            {/*<span className={style.description}>{props.description} </span>*/}
         </div>
     );
 }

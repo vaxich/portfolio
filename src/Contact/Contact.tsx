@@ -41,16 +41,17 @@ function Contact() {
                     </div >
                     <div className={style.contactRight}>
                         <form className={style.contactForm}>
-                            <div className={style.contactNameEmail}>
-                                <input className={style.contactInput} type="text" name="name" placeholder={"name"}/>
-                                <input className={style.contactInput} type="e-mail" name="name" placeholder={"e-mail"}/>
-                            </div>
+                            {/*<div className={style.contactNameEmail}>*/}
+                            {/*    <input className={style.contactInput} type="text" name="name" placeholder={"name"}/>*/}
+                            {/*    <input className={style.contactInput} type="e-mail" name="name" placeholder={"e-mail"}/>*/}
+                            {/*</div>*/}
 
 
 
-                            <textarea className={style.contactTextarea} placeholder={"Your message"} />
+                            {/*<textarea className={style.contactTextarea} placeholder={"Your message"} />*/}
                             <div className={style.contactButtonContainer}>
-                                <input className={style.contactBotton} type="submit" value="Отправить" />
+                                {/*<input  className={style.contactBotton} type="submit" value="Отправить" />*/}
+                                <a className={style.contactBotton} href="mailto:vaxich@rambler.ru?subject=Сообщение с сайта">Отправить мне письмо</a>
                             </div>
 
                         </form>

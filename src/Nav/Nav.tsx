@@ -6,11 +6,11 @@ import {Link} from "react-router-dom";
 function Nav() {
     return (
         <div className={style.nav}>
-                <Link className={style.textStyle} to="/">Главная</Link>
-                <Link className={style.textStyle} to="/skils">Скилы</Link>
-                <Link className={style.textStyle} to="/about">Обо мне</Link>
-                <Link className={style.textStyle} to="/projects">Проекты</Link>
-                <Link className={style.textStyle} to="/contact">Контакты</Link>
+                <Link className={style.textStyle} to="/">Main</Link>
+                <Link className={style.textStyle} to="/skils">Skills</Link>
+                <Link className={style.textStyle} to="/about">About me</Link>
+                <Link className={style.textStyle} to="/projects">Projects</Link>
+                <Link className={style.textStyle} to="/contact">Contacts</Link>
             {/*<a className={style.textStyle} href="">Главная</a>*/}
             {/*<a className={style.textStyle} href="">Скилы</a>*/}
             {/*<a className={style.textStyle} href="">Проекты</a>*/}

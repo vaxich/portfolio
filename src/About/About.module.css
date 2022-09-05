@@ -14,8 +14,8 @@
 .AboutRight{
     flex-direction: column;
     display: flex;
-    width: 60%;
-    padding-left: 100px;
+    /*width: 60%;*/
+    /*padding-left: 100px;*/
 }
 .aboutText{
     text-transform: uppercase;
@@ -64,6 +64,24 @@
     transition: all .3s ease;
 }
 .aboutButton:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.contactBotton {
+    margin-top: 8px;
+    /*min-width: 50%;*/
+    text-align: center;
+    text-transform: none;
+    font-weight: unset;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    color: #fff;
+    display: inline-block;
+    background-color: #4169e1;
+}
+.contactBotton:hover{
     background-color: #fff;
     color: #000;
     cursor: pointer;

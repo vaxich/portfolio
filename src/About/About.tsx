@@ -8,16 +8,17 @@ function About() {
         <div >
             <div className={styleContainer.container}>
                 <div className={style.aboutContainer}>
-                    <div className={style.aboutPhoto}>
+                    {/*<div className={style.aboutPhoto}>*/}
 
-                    </div>
+                    {/*</div>*/}
                     <div className={style.AboutRight}>
                         <h3 className={style.aboutText}>PAVEL <span className={style.aboutSpanText}>DEDELYUK</span></h3>
                         <h3> <span className={style.creativ}>novice </span> <span className={style.job}>Developer</span> </h3>
                         <p className={style.text}>
                             My name is Pavel Dedelyuk. I am a novice developer. I am passionate about JavaScript and React development. I acquired skills and knowledge in IT-INCUBATOR. I am currently studying here. Here you can see my projects. they will be constantly updated.</p>
-                        <div>
-                            <a className={style.aboutButton} href="">Learn More</a>
+                        <div className={style.contactButtonContainer}>
+                            {/*<input  className={style.contactBotton} type="submit" value="Отправить" />*/}
+                            <a className={style.contactBotton} href="mailto:vaxich@rambler.ru?subject=Сообщение с сайта">Отправить мне письмо</a>
                         </div>
                     </div>
                 </div>

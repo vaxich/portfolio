@@ -19,7 +19,8 @@ export const  MyWorks =(props:any ) => {
     return (
         <div className={style.myWorksBlock}>
             <div className={ ` ${styleContainer.container} ${style.worksContainer}`   }>
-                <h3 className={style.worksTitle}>My Works</h3>
+                <h3 className={style.worksTitle}>
+                    Here are some of the projects I have worked on. They are made in the learning process and may not be done to the end. This list will be updated.</h3>
                 <div className={style.works}>
                     {
                         myWorksObject.map((work) => {

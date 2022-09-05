@@ -12,7 +12,7 @@ function Main() {
                     <h3 className={style.mainText}>I`m  <span className={style.mainSpanText}>PAVEL DEDELYUK</span></h3>
                     <h3> <span className={style.creativ}>novice  </span> <span className={style.job}>Developer</span> </h3>
                     <Link className={style.textStyle} to="/contact">
-                        <a className={style.mainButton} href="">Download CV</a>
+                        <a onClick={ ()=> {alert("CV пока в разработке")}} className={style.mainButton} href="">Download CV</a>
                     </Link>
 
 
