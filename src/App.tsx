@@ -63,7 +63,7 @@ export const myWorksObject = [
     },
     {
         id: "4",
-        title:"Smoothie",
+        title:"Newsman",
         slug: 'newsman',
         percentCompleted: "100%",
         description: "Моё первое SPA. На github.io почему то не получает данные с API. пробовал newsapi.org и https://mediastack.com. Локально рабоатет",
