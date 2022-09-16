@@ -6,11 +6,7 @@
     padding: 10px;
     /*flex-wrap: wrap;*/
 }
-.aboutPhoto{
-    background-color: #14b4dc;
-    width: 360px;
-    height: 360px;
-}
+
 .AboutRight{
     flex-direction: column;
     display: flex;
@@ -28,7 +24,7 @@
 
 }
 .aboutSpanText {
-    color: #4169e1;
+    color: #0028fc;
 }
 .creativ{
 
@@ -79,11 +75,11 @@
     padding: 15px 40px;
     color: #fff;
     display: inline-block;
-    background-color: #4169e1;
+    background-color: #0028fc;
+    transform: scale(1);
 }
 .contactBotton:hover{
-    background-color: #fff;
-    color: #000;
+    transform: scale(1.05);
     cursor: pointer;
 }
 

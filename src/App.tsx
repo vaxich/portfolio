@@ -1,7 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-
 import './App.css';
-//import './BackGround.css';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skils from "./Skils/Skills";
@@ -9,14 +7,14 @@ import About from "./About/About";
 import {Route, Routes} from "react-router-dom";
 import Contact from "./Contact/Contact";
 import {MyWorks} from "./MyWorks/MyWorks";
-
 import OneProject from "./MyWorks/OneProject/OneProject";
-
 // @ts-ignore (no type declarations for vantajs)
 import NET from 'vanta/dist/vanta.net.min'
 
 import backgroundCounter3 from "./common/photo/counter3.png";
 import backgroundSmoothie from "./common/photo/Smoothie.png";
+import backgroundHelFly from "./common/photo/HelFly.png";
+import backgroundNewsman from "./common/photo/newsman.png";
 
 import html5 from "./common/icon/html-5.png"
 import css3 from "./common/icon/css.png"
@@ -25,19 +23,21 @@ import typeScript from "./common/icon/typescript.png"
 import react from "./common/icon/react.png"
 import redux from "./common/icon/redux.png"
 import git from "./common/icon/git.png"
+import unitTest from "./common/icon/unit-testing.png"
+import nodeJs from "./common/icon/node-js.png"
 
 
 
 export const myWorksObject = [
     {
         id:"1",
-        title:"Социальная сеть",
-        slug: 'socialnaya-set',
-        percentCompleted: "70%",
-        description: "bla-bla-bla",
-        linkProgect: "http",
-        lingGitHub:"http bla-bla",
-        urlImg:""
+        title:"HELFLY",
+        slug: 'helfly',
+        percentCompleted: "100%",
+        description: "Вёрстка страницы. Сделана на GULP и SCSS",
+        linkProgect: "https://vaxich.github.io/HELYFLY/dist/",
+        lingGitHub:"https://github.com/vaxich/HELYFLY",
+        urlImg:backgroundHelFly
     },
     {
         id: "2",
@@ -59,6 +59,17 @@ export const myWorksObject = [
         linkProgect: "https://vaxich.github.io/Smoothie/dist/",
         lingGitHub:"https://github.com/vaxich/Smoothie",
         urlImg:backgroundSmoothie
+
+    },
+    {
+        id: "4",
+        title:"Smoothie",
+        slug: 'newsman',
+        percentCompleted: "100%",
+        description: "Моё первое SPA. На github.io почему то не получает данные с API. пробовал newsapi.org и https://mediastack.com. Локально рабоатет",
+        linkProgect: "https://vaxich.github.io/newsman/",
+        lingGitHub:"https://github.com/vaxich/newsman",
+        urlImg:backgroundNewsman
 
     }
 ]
@@ -111,6 +122,20 @@ export const mySkills = [
         title:"Git",
         percentCompleted: "70%",
         skillAvatar:git
+
+    },
+    {
+        id:"8",
+        title:"Unit testing",
+        percentCompleted: "70%",
+        skillAvatar:unitTest
+
+    },
+    {
+        id:"9",
+        title:"Node Js",
+        percentCompleted: "70%",
+        skillAvatar:nodeJs
 
     }
 ]

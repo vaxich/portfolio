@@ -11,7 +11,7 @@
     border-bottom: 1px dashed hsla(0,0%,100%,.15);
 }
 .contactSpan{
-    color:#4169e1;
+    color:#0028fc;
 }
 .contactContainerForm{
     display: flex;
@@ -147,11 +147,11 @@
     padding: 15px 40px;
     color: #fff;
     display: inline-block;
-    background-color: #4169e1;
+    background-color: #0028fc;
+    transform: scale(1);
 }
 .contactBotton:hover{
-    background-color: #fff;
-    color: #000;
+    transform: scale(1.05);
     cursor: pointer;
 }
 

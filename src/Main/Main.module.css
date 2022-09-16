@@ -14,7 +14,7 @@
     margin-bottom: 20px;
 }
 .mainSpanText {
-    color: #4169e1;
+    color: #0028fc;
 }
 .creativ{
     font-size: 25px;
@@ -30,17 +30,17 @@
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    background-color: #4169e1;
+    background-color: #0028fc;
     padding: 10px 40px;
     text-align: center;
     border-radius: 50px;
     font-family: Poppins;
     font-size: 40px;
+    transform: scale(1);
 
 }
 .mainButton:hover {
-    background-color: #fff;
-    color: #000;
+    transform: scale(1.05);
     cursor: pointer;
 }
 

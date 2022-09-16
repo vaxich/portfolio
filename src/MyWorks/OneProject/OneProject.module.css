@@ -20,6 +20,7 @@
     height: 350px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
 }
 .oneProjectMiniBlock{
